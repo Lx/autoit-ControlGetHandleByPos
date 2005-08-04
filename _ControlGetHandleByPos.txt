@@ -1,0 +1,34 @@
+###User Defined Function###
+_ControlGetHandleByPos()
+
+###Description###
+Retrieves the internal handle of a control that matches a given position. Useful for windows that create their controls in a random order.
+
+###Syntax###
+#include <Process.au3>
+$hControl = _ControlGetHandleByPos($sTitle, $sText, $iX, $iY)
+
+###Parameters###
+@@ParamTable@@
+$sTitle
+	The title of the window containing the control.
+$sText
+	The text of the window containing the control.
+$iX
+	The X coordinate of the control.
+$iY
+	The Y coordinate of the control.
+@@End@@
+
+###ReturnValue###
+Success: returns the control's handle.
+Failure: returns 0 and sets @error to 1 if the window could not be found, or 2 if the control could not be found.
+
+###Remarks###
+None.
+
+###Related###
+None.
+
+###Example###
+@@IncludeExample@@
